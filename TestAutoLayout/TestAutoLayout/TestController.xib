@@ -14,8 +14,7 @@
             <rect key="frame" x="0.0" y="0.0" width="292" height="459"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                
-                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rXY-lS-uOk">
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rXY-lS-uOk">
                     <rect key="frame" x="15" y="35" width="123" height="29"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <segments>
@@ -23,24 +22,30 @@
                         <segment title="Second"/>
                     </segments>
                 </segmentedControl>
-
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93K-Is-zQG">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93K-Is-zQG">
                     <rect key="frame" x="105" y="157" width="46" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GrZ-KD-UOL">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GrZ-KD-UOL">
                     <rect key="frame" x="167" y="90" width="46" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="rXY-lS-uOk" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="15" id="KCt-0R-2Z0"/>
+                <constraint firstItem="rXY-lS-uOk" firstAttribute="top" secondItem="1" secondAttribute="top" constant="35" id="Pcy-oC-cnE"/>
+                <constraint firstItem="93K-Is-zQG" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="105" id="ghy-P2-ALe"/>
+                <constraint firstItem="93K-Is-zQG" firstAttribute="top" secondItem="rXY-lS-uOk" secondAttribute="bottom" constant="94" id="ltX-6e-lrX"/>
+                <constraint firstAttribute="trailing" secondItem="GrZ-KD-UOL" secondAttribute="trailing" constant="79" id="vch-8P-fdh"/>
+                <constraint firstItem="GrZ-KD-UOL" firstAttribute="top" secondItem="1" secondAttribute="top" constant="90" id="yQa-zi-F5b"/>
+            </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
