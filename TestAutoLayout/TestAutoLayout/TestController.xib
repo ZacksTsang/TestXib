@@ -14,6 +14,16 @@
             <rect key="frame" x="0.0" y="0.0" width="292" height="459"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rXY-lS-uOk">
+                    <rect key="frame" x="15" y="35" width="123" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <segments>
+                        <segment title="First"/>
+                        <segment title="Second"/>
+                    </segments>
+                </segmentedControl>
+                
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93K-Is-zQG">
                     <rect key="frame" x="105" y="157" width="46" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -31,10 +41,12 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                
                 <constraint firstItem="GrZ-KD-UOL" firstAttribute="top" secondItem="1" secondAttribute="top" constant="90" id="2nH-RF-Obm"/>
                 <constraint firstAttribute="trailing" secondItem="GrZ-KD-UOL" secondAttribute="trailing" constant="79" id="DgS-vR-v7e"/>
                 <constraint firstItem="93K-Is-zQG" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="105" id="Jr4-il-SiA"/>
                 <constraint firstItem="93K-Is-zQG" firstAttribute="top" secondItem="1" secondAttribute="top" constant="157" id="pSR-mp-HF2"/>
+
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
